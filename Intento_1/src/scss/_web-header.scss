@@ -1,0 +1,39 @@
+// Variables
+$web-header-background: $color-dark-grey;
+$web-header-color: $color-white;
+
+// Styles
+.btn.btn-success.navbar-right {
+    margin-right: 0.15%;
+    margin-left: 0.2%;
+    font-style: oblique;
+}
+
+.spartanlife {
+    color: $color-spartan-blue;
+    font-family: $spartan-font-family;
+}
+.jumbotron {
+    margin-top: -20px;
+}
+.navbar-brand.web-title {
+    font-size: $font-size-base+20px;
+    font-family: $spartan-font-family;
+
+}
+
+.form-group.navbar-right {
+    padding-left: 0.15%;
+
+}
+
+.signing-button {
+    margin-right: 2%;
+
+}
+
+.jumbo-spartan {
+    @include if-is-phone {
+        display: none;
+    }
+}

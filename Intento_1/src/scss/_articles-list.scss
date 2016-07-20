@@ -1,0 +1,79 @@
+// Variables
+
+// Styles
+.author-title {
+    color: $color-spartan-blue;
+    font-style: italic;
+}
+
+.author-description {
+    color: $color-medium-grey;
+    font-style: italic;
+}
+.author-img {
+    max-width: 30px;
+}
+.likes {
+    color: $color-spartan-blue;
+}
+.table.table-responsive {
+    border-color: $color-white;
+}
+
+.btn.btn-default.btn-sm {
+    font-size: small;
+}
+
+.starstyle:hover:before {
+    color: $color-yellow-egg;
+    content: "\2605";
+    position: absolute;
+}
+.star-checked:before {
+    color: $color-yellow-egg;
+    content: "\2605";
+    position: absolute;
+}
+
+.articless-list {
+
+    @include if-is-tablet {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .article {
+        @extend .clearfix;
+        border-bottom: 1px solid $color-grey;
+
+        @include if-is-tablet {
+            box-sizing: border-box;
+            width: 20%; // calc(20% - 20px);
+            text-align: center;
+            padding: 10px;
+        }
+
+        .cover {
+            width: 60px;
+            float: left;
+            margin-right: 10px;
+            @include if-is-tablet {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+        }
+        .article-title {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        .article-title, .title {
+            display: block;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            height: 16px;
+            padding-right: 20px;
+        }
+    }
+}

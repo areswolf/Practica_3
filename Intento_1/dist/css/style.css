@@ -1,0 +1,401 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+
+*/
+@import "https://fonts.googleapis.com/css?family=Open+Sans:400,700";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.clearfix:before, .articless-list .article:before, .clearfix:after, .articless-list .article:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after, .articless-list .article:after {
+  clear: both; }
+
+body {
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px; }
+
+img {
+  max-width: 100%; }
+
+embed, object, video {
+  max-width: 100%; }
+
+form {
+  padding: 10px; }
+
+/*label, input, button {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+label {
+    font-size: $font-size-small;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+input {
+    border: 1px solid $color-sirena;
+    margin: 5px 0px 15px 0px;
+    padding: 10px;
+    font-size: $font-size-base;
+    border-radius: 5px;
+    &:focus {
+        outline-color: $color-sirena;
+        background: $color-grey;
+    }
+}
+button {
+    @extend input;
+    background: $color-sirena;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: darken($color-sirena, 50%);
+    transition: all 0.25s;
+    &:hover {
+        background: darken($color-sirena, 10%);
+    }
+    &:active { // button:active
+        background: darken($color-sirena, 20%);
+        color: $color-white;
+    }
+}
+*/
+*::selection {
+  background: #FCF3CE; }
+
+.btn.btn-success.navbar-right {
+  margin-right: 0.15%;
+  margin-left: 0.2%;
+  font-style: oblique; }
+
+.spartanlife {
+  color: #2f4f90;
+  font-family: Strasua; }
+
+.jumbotron {
+  margin-top: -20px; }
+
+.navbar-brand.web-title {
+  font-size: 34px;
+  font-family: Strasua; }
+
+.form-group.navbar-right {
+  padding-left: 0.15%; }
+
+.signing-button {
+  margin-right: 2%; }
+
+@media all and (max-width: 736px) {
+  .jumbo-spartan {
+    display: none; } }
+
+.author-title {
+  color: #2f4f90;
+  font-style: italic; }
+
+.author-description {
+  color: #989898;
+  font-style: italic; }
+
+.author-img {
+  max-width: 30px; }
+
+.likes {
+  color: #2f4f90; }
+
+.table.table-responsive {
+  border-color: #fff; }
+
+.btn.btn-default.btn-sm {
+  font-size: small; }
+
+.starstyle:hover:before {
+  color: #fca600;
+  content: "\2605";
+  position: absolute; }
+
+.star-checked:before {
+  color: #fca600;
+  content: "\2605";
+  position: absolute; }
+
+@media all and (min-width: 737px) {
+  .articless-list {
+    display: flex;
+    flex-wrap: wrap; } }
+
+.articless-list .article {
+  border-bottom: 1px solid #EBEDEA; }
+  @media all and (min-width: 737px) {
+    .articless-list .article {
+      box-sizing: border-box;
+      width: 20%;
+      text-align: center;
+      padding: 10px; } }
+  .articless-list .article .cover {
+    width: 60px;
+    float: left;
+    margin-right: 10px; }
+    @media all and (min-width: 737px) {
+      .articless-list .article .cover {
+        width: 100%;
+        margin-bottom: 10px; } }
+  .articless-list .article .article-title {
+    margin-top: 15px;
+    font-weight: bold; }
+  .articless-list .article .article-title, .articless-list .article .title {
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 16px;
+    padding-right: 20px; }
+
+/**
+* CSS themes for simplePagination.js
+* Author: Flavius Matis - http://flaviusmatis.github.com/
+* URL: https://github.com/flaviusmatis/simplePagination.js
+* http://flaviusmatis.github.io/simplePagination.js/#page-16
+*/
+ul.simple-pagination {
+  list-style: none; }
+
+.simple-pagination {
+  display: block;
+  overflow: hidden;
+  padding: 0 5px 5px 0;
+  margin: 0; }
+
+.simple-pagination ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.simple-pagination li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  float: left; }
+
+span.ellipse.clickable {
+  cursor: pointer; }
+
+.ellipse input {
+  width: 3em; }
+
+/*------------------------------------*	Compact Theme Styles
+\*------------------------------------*/
+.compact-theme a, .compact-theme span {
+  float: left;
+  color: #333;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  text-align: center;
+  border: 1px solid #AAA;
+  border-left: none;
+  min-width: 14px;
+  padding: 0 7px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  background: #efefef;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #ffffff 0%, #efefef 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #efefef));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #ffffff 0%, #efefef 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #ffffff 0%, #efefef 100%);
+  /* Opera11.10+ */
+  background: -ms-linear-gradient(top, #ffffff 0%, #efefef 100%);
+  /* IE10+ */
+  background: linear-gradient(top, #ffffff 0%, #efefef 100%);
+  /* W3C */ }
+
+.compact-theme a:hover {
+  text-decoration: none;
+  background: #efefef;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #efefef), color-stop(100%, #bbbbbb));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #efefef 0%, #bbbbbb 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #efefef 0%, #bbbbbb 100%);
+  /* Opera11.10+ */
+  background: -ms-linear-gradient(top, #efefef 0%, #bbbbbb 100%);
+  /* IE10+ */
+  background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);
+  /* W3C */ }
+
+.compact-theme li:first-child a, .compact-theme li:first-child span {
+  border-left: 1px solid #AAA;
+  border-radius: 3px 0 0 3px; }
+
+.compact-theme li:last-child a, .compact-theme li:last-child span {
+  border-radius: 0 3px 3px 0; }
+
+.compact-theme .current {
+  background: #bbbbbb;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #bbbbbb 0%, #efefef 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #bbbbbb), color-stop(100%, #efefef));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #bbbbbb 0%, #efefef 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #bbbbbb 0%, #efefef 100%);
+  /* Opera11.10+ */
+  background: -ms-linear-gradient(top, #bbbbbb 0%, #efefef 100%);
+  /* IE10+ */
+  background: linear-gradient(top, #bbbbbb 0%, #efefef 100%);
+  /* W3C */
+  cursor: default; }
+
+.compact-theme .ellipse {
+  background: #EAEAEA;
+  padding: 0 10px;
+  cursor: default; }
+
+/*------------------------------------*	Light Theme Styles
+\*------------------------------------*/
+.light-theme a, .light-theme span {
+  float: left;
+  color: #fff;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  text-align: center;
+  border: 1px solid #28a4c9;
+  min-width: 14px;
+  padding: 0 10px;
+  margin: 0 5px 0 0;
+  border-radius: 3px;
+  background: #efefef;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #ffffff 0%, #efefef 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #efefef));
+  /* Chrome,Safari4+ */
+  background: linear-gradient(to bottom, #5bc0de 0, #2aabd2 100%);
+  background: -o-linear-gradient(top, #ffffff 0%, #efefef 100%);
+  /* Opera11.10+ */
+  background: -ms-linear-gradient(top, #ffffff 0%, #efefef 100%);
+  /* IE10+ */
+  background: linear-gradient(top, #ffffff 0%, #efefef 100%);
+  /* W3C */ }
+
+.light-theme a:hover {
+  text-decoration: none;
+  background: #FCFCFC; }
+
+.light-theme .current {
+  background: #2f4f90;
+  color: #FFF;
+  border-color: #444;
+  cursor: default; }
+
+.light-theme .ellipse {
+  background: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  font-weight: bold;
+  cursor: default;
+  color: #2E2E2E; }
+
+/*------------------------------------*	Dark Theme Styles
+\*------------------------------------*/
+.dark-theme a, .dark-theme span {
+  float: left;
+  color: #CCC;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  text-align: center;
+  border: 1px solid #222;
+  min-width: 14px;
+  padding: 0 7px;
+  margin: 0 5px 0 0;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  background: #555;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #555 0%, #333 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #555), color-stop(100%, #333));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #555 0%, #333 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #555 0%, #333 100%);
+  /* Opera11.10+ */
+  background: -ms-linear-gradient(top, #555 0%, #333 100%);
+  /* IE10+ */
+  background: linear-gradient(top, #555 0%, #333 100%);
+  /* W3C */ }
+
+.dark-theme a:hover {
+  text-decoration: none;
+  background: #444; }
+
+.dark-theme .current {
+  background: #222;
+  color: #FFF;
+  border-color: #000;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), 0 0 1px 1px rgba(0, 0, 0, 0.1) inset;
+  cursor: default; }
+
+.dark-theme .ellipse {
+  background: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  font-weight: bold;
+  cursor: default; }

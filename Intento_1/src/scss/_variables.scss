@@ -1,0 +1,36 @@
+// Font families
+$main-font-family: "Open Sans", sans-serif;
+$spartan-font-family: Strasua;
+$titles-font-family: $main-font-family;
+$body-font-family: $main-font-family;
+
+// Font sizes:
+$font-size-base: 14px;
+$font-size-small: $font-size-base - 3px;
+$font-size-large: $font-size-base + 6px;
+$font-size-h1: $font-size-base + 15px;
+$font-size-h2: $font-size-base + 12px;
+$font-size-h3: $font-size-base + 9px;
+$font-size-h4: $font-size-base + 6px;
+$font-size-h5: $font-size-base + 3px;
+$font-size-h6: $font-size-base;
+
+// Base colors
+$color-white: #fff;
+$color-black: #333;
+$color-grey: #EBEDEA;
+$color-sirena: #8ED7BF;
+$color-ivory-ish: #FCF3CE;
+$color-pastel-orange: #F9BB96;
+$color-dark-grey: #2E2E2E;
+$color-spartan-blue: #2f4f90;
+$color-medium-grey: #989898;
+$color-yellow-egg: #fca600;
+
+  // Components colors
+$main-text-color: $color-black;
+$body-background-color: $color-white;
+
+// Responsive variables
+$tablet-width: 737px;
+$phone-width: $tablet-width - 1px;
