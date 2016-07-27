@@ -7,6 +7,7 @@ module.exports = {
         formData.append("nombre", comment.nombre);
         formData.append("email", comment.email);
         formData.append("comentario", comment.comentario);
+        formData.append("datecreated", comment.datecreated);
 
         $.ajax({
             url: "/api/comments/",

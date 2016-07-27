@@ -23,22 +23,38 @@ function unsetLoading(){
 // enviamos una petición AJAX para almacenar el comentario
 $('.new-comment-form').on("submit", function(){
     // Validación de inputs
-    
+
     var inputs = $(".new-comment-form input");
     for (var i = 0; i < inputs.length; i++) {
         var input = inputs[i];
+        if (input.id == "comentario") {
+            if ((input.value.split(' ')).length > 120) {
+                alert("Máximo 120 palabras por cada comentario");
+                input.focus();
+                return false;
+            }
+        }
         if (input.checkValidity() == false) {
             alert(input.validationMessage);
             input.focus();
             return false;
         }
     }
-
     // comentario que quiero crear
+
+    //var months = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
+    var date = new Date();
+    var day = date.getDate();
+    var month = date.getMonth() + 1;
+    var yy = date.getYear();
+    var year = (yy < 1000) ? yy + 1900 : yy;
+    getdatenow = day + "-" + month + "-" + year + "-" + date.getHours() + "-" + date.getMinutes() + "-" + date.getSeconds(); // DD-MM-AAAA-HH-mm
+
     var comment = {
         nombre: $("#nombre").val(),
         email: $("#email").val(),
-        comentario: $("#comentario").val()
+        comentario: $("#comentario").val(),
+        datecreated: getdatenow
     };
 
     setLoading(); // deshabilito el formulario

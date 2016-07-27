@@ -15,7 +15,8 @@ gulp.task("default", ["concat-js", "compile-sass"], function(){
 
     // iniciar BrowserSync
     browserSync.init({
-        server: "./", // levanta servidor web en carpeta actual
+        //server: "./", // levanta servidor web en carpeta actual
+        proxy: "127.0.0.1:8000",
         browser: "google chrome"
     });
 
@@ -37,7 +38,7 @@ gulp.task("compile-sass", function(){
         .pipe(gulp.dest("./dist/css/")) // guardamos el archivo en dist/css
         .pipe(notify({
             title: "SASS",
-            message: "Compiled 🤘"
+            message: "Compiled OK"
         }))
         .pipe(browserSync.stream());
 });
