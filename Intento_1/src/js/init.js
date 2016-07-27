@@ -2,7 +2,10 @@
  * Created by Javier on 19/07/2016.
  */
 var $ = require('jquery');
+var apiStorage = require('./storage-api');
+var commentsListManager = require('./comments-list-manager');
 
+commentsListManager.load();
 
 var elementos = $('.likes');
 for (var i=1; i<10; i++) {
@@ -10,15 +13,21 @@ for (var i=1; i<10; i++) {
     var idelement2 = "idlike" + i;
     var elementoId = $(idelement);
 
-    if (typeof(Storage) !== "undefined") {
-        var dataStored = localStorage.getItem(idelement2);
-    }
-    //debugger;
+    var dataStored = apiStorage.load('local',idelement2,function () {
+        console.log("Almacenado Ok");
+    }, function () {
+        console.log("Almacenado Error");
+    });
+
     if (dataStored == null) {
         elementoId.html("0");
-        if (typeof(Storage) !== "undefined") {
-            localStorage.setItem(idelement2, "0");   //  Almacenamos el par this.id-num-of-likes
-        }
+
+        apiStorage.save('local',[idelement2, "0"],function () {
+            console.log("Almacenado Ok");
+        }, function () {
+            console.log("Almacenado Error");
+        });
+
     }
     else {
         elementoId.html(dataStored);

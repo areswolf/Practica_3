@@ -2,6 +2,7 @@
  * Created by Javier on 19/07/2016.
  */
 var $ = require('jquery');
+var apiStorage = require('./storage-api');
 
 $('.btnstar').on("before click",function () {
     var elemento = '#' + this.firstElementChild.id;
@@ -24,9 +25,14 @@ $('.starstyle').on("before click", function() {
                 nolikes = nolikes + 1;
                 numOfLikes = String(nolikes);
                 $(idelement).html(numOfLikes);
-                if (typeof(Storage) !== "undefined") {
-                    localStorage.setItem(idelement2, numOfLikes);   //  Almacenamos el par this.id-num-of-likes
-                }
+                //if (typeof(Storage) !== "undefined") {
+                    //localStorage.setItem(idelement2, numOfLikes);   //  Almacenamos el par this.id-num-of-likes
+                    apiStorage.save('local',[idelement2, numOfLikes],function () {
+                        console.log("Almacenado Ok");
+                    }, function () {
+                        console.log("Almacenado Error");
+                    });
+                //}
             }
             return false;
         }

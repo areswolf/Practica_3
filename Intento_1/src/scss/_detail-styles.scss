@@ -1,0 +1,73 @@
+
+.container-detail {
+  @extend .clearfix;
+  padding-left: 15%;
+
+  @include if-is-phone {
+    padding: 10px;
+  }
+
+}
+
+.panel-footer {
+  font-style: italic;
+  color: $color-spartan-blue;
+}
+
+.author-desc {
+  font-style: italic;
+  color: $color-spartan-blue;
+  font-size: medium;
+
+}
+
+.author-desc-parr {
+  margin-left: 20px;
+}
+
+.blog-post {
+  font-style: italic;
+}
+
+.table-detail {
+  max-width: 50%;
+  @include if-is-phone {
+    max-width: 100%;
+  }
+
+}
+
+.navbar-brand {
+  @include if-is-phone {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+}
+
+.author-img-detail {
+  max-width: 20%;
+  @include if-is-phone {
+    max-width: 50%;
+    padding-left: 30px;
+    margin-left: 60px;
+  }
+}
+
+.footer-detail {
+  margin-left: 20%;
+  @include if-is-phone {
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
+
+.comment-footer {
+  padding-left: 20px;
+}
+
+.sidebar-module.links-otros {
+  margin-left: 30px;
+}
