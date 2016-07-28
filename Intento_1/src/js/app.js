@@ -1,3 +1,6 @@
+var $ = require('jquery');
+global.jQuery = $;
+var bootstrap = require('./bootstrap.min');
 require("./form.js");
 require("./like-button.js");
 require("./pagination.js");
