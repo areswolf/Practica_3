@@ -428,6 +428,14 @@ span.ellipse.clickable {
 .sidebar-module.links-otros {
   margin-left: 30px; }
 
+@media all and (max-width: 736px) {
+  #id-section-init {
+    margin-bottom: 10px; } }
+
+@media all and (min-width: 737px) {
+  #id-section-init {
+    margin-bottom: 10px; } }
+
 body .ui-element {
   display: none; }
 

@@ -71,3 +71,13 @@
 .sidebar-module.links-otros {
   margin-left: 30px;
 }
+
+#id-section-init {
+  @include if-is-phone {
+    margin-bottom: 10px;
+  }
+
+  @include if-is-tablet {
+    margin-bottom: 10px;
+  }
+}

@@ -22,6 +22,7 @@ function restafechas(f1,f2)
 
     var diasem = diasSemana[tiempo1.getDay()];
 
+    
     return [days,seconds,diasem];
 }
 
@@ -77,8 +78,18 @@ module.exports = {
                         }
                         else {
                             if (secsdif<86400) {
-                                diasPasados = parseInt(secsdif/3600);
-                                if (diasPasados==1) {
+                                diasPasados = parseInt(secsdif/86400);
+                                if (diasPasados==0) {
+                                    var horaspasadas = parseInt(secsdif/3600);
+                                    var minutospasados = parseInt((secsdif%3600)/60);
+                                    if (horaspasadas == 1) {
+                                        textoFecha = "Escrito hace " + horaspasadas.toString() + " hora y " + minutospasados.toString() + " minutos"
+                                    }
+                                    else {
+                                        textoFecha = "Escrito hace " + horaspasadas.toString() + " horas y " + minutospasados.toString() + " minutos"
+                                    }
+                                }
+                                else if (diasPasados==1) {
                                     textoFecha = "Escrito hace " + diasPasados.toString() + " dia"
                                 }
                                 else {
