@@ -82,3 +82,16 @@
         }
     }
 }
+
+.user-buttons {
+    @include if-is-phone {
+        margin-top: 5px;
+        padding-top: 5px;
+    }
+}
+.user-img {
+    @include if-is-phone {
+        margin-top: 3px;
+        padding-top: 3px;
+    }
+}
