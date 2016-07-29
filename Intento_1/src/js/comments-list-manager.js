@@ -22,7 +22,7 @@ function restafechas(f1,f2)
 
     var diasem = diasSemana[tiempo1.getDay()];
 
-    
+
     return [days,seconds,diasem];
 }
 
@@ -52,6 +52,7 @@ module.exports = {
                 var diasdif = restafechas(datecreated,ahora)[0];
                 var secsdif = restafechas(datecreated,ahora)[1];
                 var diasem = restafechas(datecreated,ahora)[2];
+
 
                 if (diasdif >=7) {
                     textoFecha = "Escrito el " + datecreated;

@@ -1,3 +1,6 @@
+/**
+ * Created by Javier on 29/07/2016.
+ */
 var $ = require('jquery');
 
 module.exports = {

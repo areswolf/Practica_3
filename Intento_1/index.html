@@ -9,7 +9,7 @@
     <link href='https://fonts.googleapis.com/css?family=Graduate|Pacifico' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<header>
+<header class="header">
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -20,7 +20,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand web-title" href="#">Spartan Life</a>
+                <a class="navbar-brand web-title" href="#id-section-init">Spartan Life</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -36,18 +36,16 @@
                     </li>
                 </ul>
 
-                <form class="navbar-form" role="search">
+                <form class="navbar-form">
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Buscar">
                         <button type="submit" class="btn btn-primary">Buscar</button>
                     </div>
-                    <a type="button" class="btn btn-warning navbar-right signing-button" href="./signin.html#id-section-init">Sign in</a>
-                    <button type="submit" class="btn btn-success navbar-right">Log in</button>
-                    <div class="form-group navbar-right">
+
+                    <div class="form-group navbar-right loginpassword">
                         <input type="text" placeholder="Email" class="form-control">
-                    </div>
-                    <div class="form-group navbar-right">
                         <input type="password" placeholder="Password" class="form-control">
+                        <a type="button" class="btn btn-warning navbar-right signing-button" href="./signin.html#id-section-init">Sign in</a>
                     </div>
                 </form>
             </div><!-- /.navbar-collapse -->
@@ -60,7 +58,8 @@
             <p><strong>SPARTAN LIFE </strong>es tu página de opinión, con miles de usuarios y cientos de artículos publicados por categoría. Es mucho más que un blog, es <span class="spartanlife">¡Spartan Life!</span></p>
         </div>
     </div>
-    <Section id="id-section-init"></Section>
+
+    <Section class="sect-inicio" id="id-section-init"></Section>
 
     <div class="container">
         <div class="row">
@@ -263,8 +262,8 @@
                         <thead>
                         <tr>
                             <td>
-                                <a class="navbar-brand" href="#id-section-init">Spartan Life</a>
-                                <a class="navbar-brand" href="#id-section-init"><i class="fa fa-upload fa-align-left" aria-hidden="true"></i></a>
+                                <a class="navbar-up navbar-brand" href="#id-section-init">Spartan Life</a>
+                                <a class="navbar-up navbar-brand" href="#id-section-init"><i class="fa fa-upload fa-align-left" aria-hidden="true"></i></a>
                             </td>
                         </tr>
                         </thead>

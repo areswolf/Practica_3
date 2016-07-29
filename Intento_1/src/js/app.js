@@ -1,3 +1,4 @@
+
 var $ = require('jquery');
 global.jQuery = $;
 var bootstrap = require('./bootstrap.min');
@@ -10,3 +11,4 @@ require("./comments-list-events");
 require("./init");
 require("./storage-api");
 require("./submit.js");
+require("./smoothscroll.js");
