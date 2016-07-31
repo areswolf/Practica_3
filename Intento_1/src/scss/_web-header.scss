@@ -29,11 +29,11 @@ $web-header-color: $color-white;
 }
 
 .loginpassword {
-    width: 23.5%;
+    width: 37%;
     @include if-is-phone {
         width: 100%;
     }
-    
+
 }
 
 .form-group.navbar-right {
